@@ -8,8 +8,8 @@ Gem::Specification.new do |s|
   s.author       = 'Adam Beynon'
   s.email        = 'adam.beynon@gmail.com'
   s.homepage     = 'http://opalrb.org'
-  s.summary      = '.'
-  s.description  = '..'
+  s.summary      = 'Eventable module for Opal.'
+  s.description  = 'Eventable module for Opal'
 
   s.files          = `git ls-files`.split("\n")
   s.executables    = `git ls-files -- bin/*`.split("\n").map { |f| File.basename(f) }
@@ -17,6 +17,7 @@ Gem::Specification.new do |s|
   s.require_paths  = ['lib']
 
   s.add_dependency 'rake'
-  s.add_dependency 'sprockets'
-  s.add_dependency 'opal', '~> 0.3.39'
+  s.add_dependency 'opal', '~> 0.3.44'
+
+  s.add_development_dependency 'opal-spec'
 end
